@@ -8,14 +8,14 @@ const Hero = () => {
 
  
   return (
-    <div id='hero' className='h-[90vh] flex '>
+    <div id='hero' className='h-screen flex '>
         <img className='relative object-cover  hidden md:block w-[33.3vw] 
                transition-all duration-200 ease-in-out 
                  hover:w-[40vw]' src={img1} alt='sparring'/>         
-        <div className='w-[100vw] md:w-[33.3vw] flex flex-col items-center  justify-start gap-4'>
-          <img className='m-3 pointer-events-none select-none h-[45vh] w-[35vw]'  src={logo} alt='logo'  />
-          <LinkTo to={'trial'} text={'Try Us Out'} classNames={'font-oswald text-5xl border-[.2em] border-double text-white border-white p-4 rounded-2xl bg-slate-700'}/>
-          <LinkTo  to={'membership'} text={'Membership'}  classNames={'font-oswald text-5xl border-[.2em] border-double text-white border-white p-4 rounded-2xl bg-slate-700'}/>
+        <div className='w-[100vw] md:w-[33.3vw] flex flex-col items-center  justify-start gap-2'>
+          <img className='m-3 pointer-events-none select-none '  src={logo} alt='logo'  />
+          <LinkTo to={'trial'} text={'Book a Trial Day'} classNames={'font-oswald  text-4xl  font-medium border-b-4 text-white border-black px-20 py-2 rounded-xl bg-cyan-950  '}/>
+          <LinkTo  to={'membership'} text={'Become a Member'}  classNames={'font-oswald text-4xl font-medium border-b-4 text-white border-black px-20 py-2 rounded-xl bg-cyan-950  '}/>
         </div>
        
         <img className=' object-cover hidden md:block w-[33.3vw] 
