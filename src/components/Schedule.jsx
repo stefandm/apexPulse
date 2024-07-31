@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Schedule = () => {
   return (
-    <div id='schedule'>
+    <div id='schedule' className='h-screen bg-yellow-300'>
       Schedule
     </div>
   )

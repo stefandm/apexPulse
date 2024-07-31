@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Coaches = () => {
   return (
-    <div id='coaches'style={{height:'600px',backgroundColor:'yellow'}}>
+    <div id='coaches' className='h-screen bg-red-300'>
       Coaches
     </div>
   )

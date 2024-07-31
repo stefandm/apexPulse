@@ -4,7 +4,7 @@ import About from './About'
 
 const Footer = () => {
   return (
-    <div id='footer' style={{height:'600px',backgroundColor:'blue'}}>
+    <div id='footer' className='h-screen bg-orange-300'>
         Footer
       <Map/>
       <About/>

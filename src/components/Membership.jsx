@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Membership = () => {
   return (
-    <div id='membership'style={{height:'600px',backgroundColor:'red'}}>
+    <div id='membership' className='h-screen bg-blue-400'>
       Membership
     </div>
   )
