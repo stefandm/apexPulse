@@ -7,6 +7,7 @@ import LinkTo from './header/LinkTo'
 
 const Hero = () => {
 
+// hi
  
   return (
     <div id='hero' className='h-screen flex '>
