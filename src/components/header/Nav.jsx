@@ -4,14 +4,13 @@ import LinkTo from './LinkTo'
 
 const NavLinks = ({toggleNavbar}) => {
 
+    const links = [{to:'trial',text:'Trial Day'},{to:'membership',text:'Membership Plans'},{to:'schedule',text:'Our Schedule'},{to:'coaches',text:'Meet the Coaches'},{to:'about',text:'Address & About'}]
 
   return (
 <>
-<LinkTo toggleNavbar={toggleNavbar} to={'trial'} text={'Trial Day'}/>
-<LinkTo toggleNavbar={toggleNavbar} to={'membership'} text={'Membership Plans'}/>
-<LinkTo toggleNavbar={toggleNavbar} to={'schedule'} text={'Our Schedule'}/>
-<LinkTo toggleNavbar={toggleNavbar} to={'coaches'} text={'Meet the Coaches'}/>
-<LinkTo toggleNavbar={toggleNavbar} to={'about'} text={'Address & About'}/>
+{links.map( (link,i) => (
+    <LinkTo key={i} toggleNavbar={toggleNavbar} to={link.to} text={link.text} classNames={'text-black border-transparent hover:border-b-2 hover:border-black transition ease duration-500'}/>
+))}
 </>
   )
 }
@@ -23,12 +22,12 @@ const Nav = ({toggleNavbar,isOpen}) => {
     return(
         <>
         <nav className="w-2/3 flex justify-end mx-6">
-            <div className="hidden md:flex justify-end w-full">
+            <div className="hidden md:flex justify-end items-center w-full">
                 <NavLinks />
             </div>
             <div>
-                <button onClick={toggleNavbar} className="md:hidden">
-                    {isOpen ? <X /> : <Menu/> }
+                <button onClick={toggleNavbar} className="md:hidden" >
+                    {isOpen ? <X stroke={'black'}/> : <Menu stroke={'black'} /> }
                 </button>
             </div>
         </nav>
