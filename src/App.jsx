@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer'
 import Hero from './components/Hero'
 import Trial from './components/Trial'
 import Header from './components/header/Header'
-import Gallery from './components/Gallery'
+import Paragraph from './components/Paragraph'
 import Schedule from './components/Schedule'
 
 
@@ -14,10 +14,10 @@ function App() {
     <>
      <Header/>
      <Hero/>
-     <Gallery/>
+     <Paragraph/>
      <Trial/>
-     <Membership/>
      <Schedule/>
+     <Membership/>
      <Coaches/>
      <Footer/>
     </>
