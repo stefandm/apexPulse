@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import {Menu, X} from 'lucide-react'
 import LinkTo from './LinkTo'
+import PropTypes from 'prop-types'
 
 const NavLinks = ({toggleNavbar}) => {
 
@@ -15,24 +15,28 @@ const NavLinks = ({toggleNavbar}) => {
   )
 }
 
+NavLinks.propTypes = {
+    toggleNavbar : PropTypes.func,
+}
+
 
 const Nav = ({toggleNavbar,isOpen}) => {
 
 
     return(
         <>
-        <nav className=" relative flex items-center justify-end px-4 py-2">
-            <div className="hidden md:flex   justify-end items-center w-full">
+        <nav className=" relative flex items-center justify-end px-4 py-3">
+            <div className="hidden md:flex  justify-end items-center w-full">
                 <NavLinks />
             </div>
-            <div>
-                <button onClick={toggleNavbar} className="md:hidden" >
-                    {isOpen ? <X stroke={'black'}/> : <Menu  stroke={'black'} /> }
+            <div className=' items-center '>
+                <button onClick={toggleNavbar} className="md:hidden "  >
+                    {isOpen ? <X className='h-[40px] w-[40px]' stroke={'black'}/> : <Menu className='h-[40px] w-[40px]' stroke={'black'} /> }
                 </button>
             </div>
         </nav>
         {isOpen && 
-        <div className="py-5 flex basis-full absolute top-10 left-[50%] -translate-x-1/2 w-full bg-sky-50 border-b-2 border-black flex-col items-center gap-8 ">
+        <div className="py-5 flex basis-full absolute flex-wrap top-[9.5vh] left-[50%] -translate-x-1/2 w-full bg-sky-50 border-b-2 border-black flex-col items-center gap-8 ">
             <NavLinks  toggleNavbar={toggleNavbar}/>
         </div>}
         </>
@@ -40,4 +44,8 @@ const Nav = ({toggleNavbar,isOpen}) => {
     )
 }
 
+Nav.propTypes = {
+    toggleNavbar : PropTypes.func,
+    isOpen : PropTypes.func
+}
 export default Nav

@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import Trial from './components/Trial'
 import Header from './components/header/Header'
 import Paragraph from './components/Paragraph'
-import Schedule from './components/Schedule'
+import Schedule from './components/Schedule/Schedule'
 
 
 function App() {
