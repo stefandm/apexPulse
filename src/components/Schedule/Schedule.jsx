@@ -19,8 +19,8 @@ function Schedule() {
   ];
 
   const wednesday = [
-    ['10-11: Mixed training'],
-    ['11-12: Strength and conditioning'],
+    ['10-11: All ages'],
+    ['11-12: Outdoor Cardio'],
     ['17-18: Juniors(12-17years)'],
     ['18-19: Mobility'],
     ['19-20: Open mat']
@@ -48,7 +48,7 @@ function Schedule() {
   ];
 
   return (
-    <div id="schedule" className="h-fit max-w-[100vw] pt-10 mb-8 justify-center flex flex-col md:flex-row items-center">
+    <div id="schedule" className=" ease-in-out duration-500 gap-4 h-fit max-w-[100vw] pt-20 mb-16 justify-center flex flex-col md:flex-row items-center md:items-start">
       <DayCard day="Monday" data={monday} />
       <DayCard day="Tuesday" data={tuesday} />
       <DayCard day="Wednesday" data={wednesday} />
