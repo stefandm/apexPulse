@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import {Link} from 'react-scroll'
 
 import './LinkTo.css'
@@ -10,3 +10,10 @@ const LinkTo = ({toggleNavbar,to,text,classNames}) => {
 }
 
 export default LinkTo
+
+LinkTo.propTypes = {
+  toggleNavbar : PropTypes.func,
+  to : PropTypes.string,
+  text : PropTypes.string,
+  classNames : PropTypes.string
+}

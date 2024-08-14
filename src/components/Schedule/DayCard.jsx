@@ -41,7 +41,7 @@ const DayCard = ({ day, data }) => {
       >
         <ul className='mt-4'>
           {data.map((item, index) => (
-            <li key={index} className='mt-2 text-lg'>{item}</li>
+            <li key={index} className='select-none mt-2 text-wrap text-lg'>{item}</li>
           ))}
         </ul>
       </div>

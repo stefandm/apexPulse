@@ -48,13 +48,16 @@ function Schedule() {
   ];
 
   return (
-    <div id="schedule" className=" ease-in-out duration-500 gap-4 h-fit max-w-[100vw] pt-20 mb-16 justify-center flex flex-col md:flex-row items-center md:items-start">
+    <div id="schedule" className="select-none py-[5vh] lg:py-[10vh] px-[2vw] ">
+    <h1 className="font-oswald text-center text-slate-800 text-6xl border-b-4 border-t-4 border-slate-800 py-6">Schedule</h1>
+    <div className=" ease-in-out h-fit  duration-500 gap-4 lg:gap-14 pt-[10vh] md:pt-[15vh]  justify-center flex flex-col lg:flex-row  items-center lg:items-start">
       <DayCard day="Monday" data={monday} />
       <DayCard day="Tuesday" data={tuesday} />
       <DayCard day="Wednesday" data={wednesday} />
       <DayCard day="Thursday" data={thursday} />
       <DayCard day="Friday" data={friday} />
       <DayCard day="Sunday" data={sunday} />
+    </div>
     </div>
   );
 }

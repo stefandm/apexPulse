@@ -1,4 +1,4 @@
-import Membership from './components/Membership'
+import Membership from './components/Membership/Membership'
 import Coaches from './components/Coaches'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero'
