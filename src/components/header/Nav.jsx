@@ -7,7 +7,6 @@ const NavLinks = ({ toggleNavbar }) => {
     { to: 'trial', text: 'Trial Day' },
     { to: 'schedule', text: 'Schedule' },
     { to: 'membership', text: 'Membership Plans' },
-    { to: 'coaches', text: 'Meet the Coaches' },
     { to: 'about', text: 'Address & Contact' }
   ];
 
@@ -24,6 +23,9 @@ NavLinks.propTypes = {
   toggleNavbar: PropTypes.func
 };
 
+
+
+
 const Nav = ({ toggleNavbar, isOpen }) => {
   return (
     <>
@@ -38,7 +40,7 @@ const Nav = ({ toggleNavbar, isOpen }) => {
         </div>
       </nav>
       <div
-        className={`fixed top-[10vh] left-0 h-full bg-sky-50 outline-r-2 flex flex-col pb-6 border-b-2 border-black items-center gap-8 transition-transform duration-500 ease-in-out md:hidden ${
+        className={`fixed top-[10vh] z-20 left-0 h-full bg-sky-50 outline-r-2 flex flex-col pb-6 border-b-2 border-black items-center gap-8 transition-transform duration-500 ease-in-out md:hidden ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         style={{ width: '100vw',height: 'fit-content' }} // Adjust the width as needed

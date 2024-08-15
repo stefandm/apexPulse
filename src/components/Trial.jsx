@@ -20,8 +20,8 @@ const Trial = () => {
         className="block md:hidden h-[55vh] w-screen object-cover"
       />
 
-      <p className="absolute bottom-[-12vh] lg:bottom-[-15vh] p-6 left-1/2  -translate-x-1/2 w-[90vw] font-oswald bg-white text-l md:text-3xl font-light  text-center shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-gradient-to-b from-sky-100">
-        To book a trial day, you can press&nbsp;
+      <p className="select-none absolute bottom-[-12vh] lg:bottom-[-15vh] p-6 left-1/2  -translate-x-1/2 w-[90vw] font-oswald bg-white text-l md:text-3xl font-light  text-center shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] bg-gradient-to-b from-sky-100">
+        To book a trial day, you can press
         <a href="tel:+4917635569006">
           <FaPhoneAlt className="inline-block hover:text-green-500 hover:scale-105 transition ease"/>
         </a> 

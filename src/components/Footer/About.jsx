@@ -1,9 +1,10 @@
-import React from 'react'
 
 const About = () => {
   return (
-    <div id='about'>
-      About
+    <div >
+AGB
+Impressum
+Datenschutz
     </div>
   )
 }
