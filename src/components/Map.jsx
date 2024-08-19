@@ -37,7 +37,7 @@ const MapComponent = () => {
         <div >
           <h1>Address:</h1>
           <h1>Imaginary st. 99</h1>
-          <p>beri Big city</p>
+          <p>Munich 10101</p>
         </div>
         <div className='flex flex-col items-center'>
           <h1>Contact:</h1>

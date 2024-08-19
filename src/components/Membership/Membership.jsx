@@ -15,11 +15,11 @@ const Membership = () => {
   };
 
   return (
-    <div className="p-6 md:p-10 bg-gradient-to-b from-white to-sky-100 mt-[5vh]" id="membership">
+    <div className="p-6 pt-[5vh] bg-gradient-to-b from-white to-sky-100" id="membership">
       <h2 className="select-none font-oswald text-center text-slate-800 font-extrabold text-4xl md:text-6xl border-b-4 border-t-4 border-slate-800 py-4 md:py-6">Our Memberships</h2>
 
       {/* Slider for small screens */}
-      <div className="block lg:hidden">
+      <div className="block lg:hidden ">
         <Slider {...settings} className="w-full">
           <div className="flex justify-center items-center">
             <MembCard header={'Teen'} ages={'Ages 12-17'} text={'We build boxing skills and confidence. Teens learn discipline, respect, and fitness in a supportive setting, guided by experienced coaches.'} price={'50 $'}/>
@@ -34,7 +34,7 @@ const Membership = () => {
       </div>
 
       {/* Gallery for medium and larger screens */}
-      <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-6 pt-[5vh]">
+      <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-6 pt-[10vh]">
         <div className="flex justify-center">
           <MembCard header={'Teen'} ages={'Ages 12-17'} text={'We build boxing skills and confidence. Teens learn discipline, respect, and fitness in a supportive setting, guided by experienced coaches.'} price={'50 $'}/>
         </div>
