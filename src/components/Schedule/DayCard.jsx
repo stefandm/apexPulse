@@ -26,9 +26,22 @@ const DayCard = ({ day, data }) => {
   };
 
   return (
-    <div className={`day-card  mb-10 flex flex-col transition-all duration-500 ease-in-out font-oswald ${isMinimized ? 'minimized' : 'maximized'}`}>
-      <div className='header cursor-pointer' onClick={toggleMinimize}>
-        <h1 className='text-4xl text-center text-slate-800 hover:text-sky-900'>{day} {isMinimized ? <span className='md:hidden'>+</span> : <span className='md:hidden'>-</span>}</h1>
+    <div
+      className={`day-card mb-10 flex flex-col transition-all duration-500 ease-in-out font-oswald ${isMinimized ? 'minimized' : 'maximized'}`}
+      role="region"
+      aria-labelledby={`${day.toLowerCase()}-header`}
+    >
+      <div
+        className='header cursor-pointer'
+        onClick={toggleMinimize}
+        role="button"
+        aria-expanded={!isMinimized}
+        aria-controls={`${day.toLowerCase()}-content`}
+        id={`${day.toLowerCase()}-header`}
+      >
+        <h1 className='text-4xl text-center text-slate-800 hover:text-sky-900'>
+          {day} {isMinimized ? <span className='md:hidden'>+</span> : <span className='md:hidden'>-</span>}
+        </h1>
       </div>
 
       <div
@@ -38,6 +51,9 @@ const DayCard = ({ day, data }) => {
           maxHeight: isMinimized ? '0px' : `${contentRef.current ? contentRef.current.scrollHeight : 'auto'}px`,
           opacity: isMinimized ? 0 : 1,
         }}
+        id={`${day.toLowerCase()}-content`}
+        role="region"
+        aria-labelledby={`${day.toLowerCase()}-header`}
       >
         <ul className='mt-4'>
           {data.map((item, index) => (
@@ -49,9 +65,9 @@ const DayCard = ({ day, data }) => {
   );
 };
 
-export default DayCard;
-
 DayCard.propTypes = {
   day: PropTypes.string,
   data: PropTypes.array,
 };
+
+export default DayCard;

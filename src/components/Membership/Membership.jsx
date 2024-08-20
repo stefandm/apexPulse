@@ -15,37 +15,76 @@ const Membership = () => {
   };
 
   return (
-    <div className="p-6 pt-[5vh] bg-gradient-to-b from-white to-sky-100" id="membership">
-      <h2 className="select-none font-oswald text-center text-slate-800 font-extrabold text-4xl md:text-6xl border-b-4 border-t-4 border-slate-800 py-4 md:py-6">Our Memberships</h2>
+    <section
+      className="p-6 pt-[5vh] bg-gradient-to-b from-white to-sky-100"
+      id="membership"
+      aria-labelledby="membership-heading"
+      role="region"
+    >
+      <h2
+        id="membership-heading"
+        className="select-none font-oswald text-center text-slate-800 font-extrabold text-4xl md:text-6xl border-b-4 border-t-4 border-slate-800 py-4 md:py-6"
+        aria-label="Our Memberships"
+      >
+        Our Memberships
+      </h2>
 
       {/* Slider for small screens */}
-      <div className="block lg:hidden ">
-        <Slider {...settings} className="w-full">
-          <div className="flex justify-center items-center">
-            <MembCard header={'Teen'} ages={'Ages 12-17'} text={'We build boxing skills and confidence. Teens learn discipline, respect, and fitness in a supportive setting, guided by experienced coaches.'} price={'50 $'}/>
+      <div className="block lg:hidden">
+        <Slider {...settings} className="w-full" aria-label="Membership Slider">
+          <div className="flex justify-center items-center" aria-label="Teen Membership Card">
+            <MembCard
+              header="Teen"
+              ages="Ages 12-17"
+              text="We build boxing skills and confidence. Teens learn discipline, respect, and fitness in a supportive setting, guided by experienced coaches."
+              price="50 $"
+            />
           </div>
-          <div className="flex justify-center items-center">
-            <MembCard header={'Adult'} ages={'Ages 18+'} text={'We offer tailored boxing training for all levels. Whether for fitness or competition, we provide the coaching you need to reach your goals.'} price={'75 $'}/>
+          <div className="flex justify-center items-center" aria-label="Adult Membership Card">
+            <MembCard
+              header="Adult"
+              ages="Ages 18+"
+              text="We offer tailored boxing training for all levels. Whether for fitness or competition, we provide the coaching you need to reach your goals."
+              price="75 $"
+            />
           </div>
-          <div className="flex justify-center items-center">
-            <MembCard header={'Professional Aspirant'} ages={''} text={'For those aiming to compete professionally. With intense training and personalized coaching from former pros, our program is designed to take your boxing skills to the next level.Contact us directly for a personalized plan.'}/>
+          <div className="flex justify-center items-center" aria-label="Professional Aspirant Membership Card">
+            <MembCard
+              header="Professional Aspirant"
+              ages=""
+              text="For those aiming to compete professionally. With intense training and personalized coaching from former pros, our program is designed to take your boxing skills to the next level. Contact us directly for a personalized plan."
+            />
           </div>
         </Slider>
       </div>
 
       {/* Gallery for medium and larger screens */}
-      <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-6 pt-[10vh]">
-        <div className="flex justify-center">
-          <MembCard header={'Teen'} ages={'Ages 12-17'} text={'We build boxing skills and confidence. Teens learn discipline, respect, and fitness in a supportive setting, guided by experienced coaches.'} price={'50 $'}/>
+      <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 gap-6 pt-[10vh]" aria-label="Membership Cards Grid">
+        <div className="flex justify-center" aria-label="Teen Membership Card">
+          <MembCard
+            header="Teen"
+            ages="Ages 12-17"
+            text="We build boxing skills and confidence. Teens learn discipline, respect, and fitness in a supportive setting, guided by experienced coaches."
+            price="50 $"
+          />
         </div>
-        <div className="flex justify-center">
-          <MembCard header={'Adult'} ages={'Ages 18+'} text={'We offer tailored boxing training for all levels. Whether for fitness or competition, we provide the coaching you need to reach your goals.'} price={'75 $'}/>
+        <div className="flex justify-center" aria-label="Adult Membership Card">
+          <MembCard
+            header="Adult"
+            ages="Ages 18+"
+            text="We offer tailored boxing training for all levels. Whether for fitness or competition, we provide the coaching you need to reach your goals."
+            price="75 $"
+          />
         </div>
-        <div className="flex justify-center">
-          <MembCard header={'Professional Aspirant'} ages={''} text={'For those aiming to compete professionally. With intense training and personalized coaching from former pros, our program is designed to take your boxing skills to the next level.Contact us directly for a personalized plan.'} />
+        <div className="flex justify-center" aria-label="Professional Aspirant Membership Card">
+          <MembCard
+            header="Professional Aspirant"
+            ages=""
+            text="For those aiming to compete professionally. With intense training and personalized coaching from former pros, our program is designed to take your boxing skills to the next level. Contact us directly for a personalized plan."
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
