@@ -1,3 +1,4 @@
+
 import { useState, useRef } from 'react';
 import useClickOutside from '../../Hooks/useClickOutside';
 
@@ -17,7 +18,7 @@ const PrivacyPolicyModal = () => {
   useClickOutside(refs, closeModal);
 
   return (
-    <div className="text-center">
+    <div className="text-center ">
       {/* Button to trigger the modal */}
       <button 
         onClick={toggleModal} 
@@ -28,7 +29,7 @@ const PrivacyPolicyModal = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
           <div ref={refs} className="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full max-h-screen overflow-y-auto">
             <h2 className="text-2xl font-semibold mb-4">Privacy Policy</h2>
             <div className="text-left">

@@ -1,3 +1,4 @@
+
 import { ChevronsDown } from 'lucide-react';
 import logo from '../assets/Logo.jpg';
 import img1 from '../assets/compressed/sparring2.jpg';
@@ -61,7 +62,7 @@ const Hero = () => {
         smooth={true}
         duration={200}
         offset={-50}
-        className='md:hidden absolute top-[85vh] left-1/2 -translate-x-1/2 rounded-full'
+        className='md:hidden absolute top-[80vh] left-1/2 -translate-x-1/2 rounded-full'
         aria-label='Scroll down to the next section'
       >
         <ChevronsDown stroke={'black'} />

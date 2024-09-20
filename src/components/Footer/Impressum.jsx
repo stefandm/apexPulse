@@ -1,3 +1,4 @@
+
 import { useState, useRef } from 'react';
 import useClickOutside from '../../Hooks/useClickOutside';
 
@@ -17,7 +18,7 @@ const ImpressumModal = () => {
   useClickOutside(refs, closeModal);
 
   return (
-    <div className="text-center">
+    <div className="text-center ">
       {/* Button to trigger the modal */}
       <button 
         onClick={toggleModal} 
@@ -28,7 +29,7 @@ const ImpressumModal = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
           {/* Prevent click events inside the modal content from propagating */}
           <div ref={refs} className="z-20 bg-white p-6 rounded-lg shadow-lg max-w-md w-full" onClick={(e) => e.stopPropagation()}>
             <h2 className="text-2xl font-semibold mb-4">Imprint</h2>

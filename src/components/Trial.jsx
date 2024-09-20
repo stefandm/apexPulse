@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import trialImg from '../assets/trialDayCut.jpg';

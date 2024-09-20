@@ -1,3 +1,5 @@
+import React from 'react';
+
 import DayCard from "./DayCard";
 
 function Schedule() {
