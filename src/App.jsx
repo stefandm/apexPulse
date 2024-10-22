@@ -1,4 +1,3 @@
-import React from 'react';
 
 import Membership from './components/Membership/Membership'
 import Footer from './components/Footer/Footer'
