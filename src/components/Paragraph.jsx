@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Paragraph = () => {
   return (
     <section
@@ -12,7 +10,7 @@ const Paragraph = () => {
         aria-label='Paragraph content container'
       >
         <h1
-          className='font-oswald bg-opacity-70 text-xl md:text-4xl font-light p-4 my-4 py-10 text-center'
+          className='font-oswald bg-opacity-70 text-xl md:text-3xl font-light p-4 my-4 py-10 text-center md:w-[70%]'
           aria-label='Inspirational gym training message'
         >
           Whether you&apos;re a teenager, a senior, or anywhere in between, our gym offers training for all skill levels, helping you learn, grow, and thrive at your own pace—because greatness is within reach for everyone!

@@ -1,9 +1,7 @@
-import React from 'react';
-
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import trialImg from '../assets/trialDayCut.jpg';
-import mobileImg from '../assets/sparring2.jpg'; // Assuming you have a mobile-specific image
+import mobileImg from '../assets/sparring2.jpg'; 
 
 const Trial = () => {
   return (
